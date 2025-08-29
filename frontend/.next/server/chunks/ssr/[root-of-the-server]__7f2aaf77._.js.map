@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":["file:///E:/internshala-assignments/Real-Time-Chat/frontend/app/page.tsx"],"sourcesContent":["// app/page.js (server component)\nimport { redirect } from 'next/navigation';\nimport { cookies } from 'next/headers';\n\nexport default function Home() {\n  const token = localStorage.get\n  \n  if (token) {\n    redirect('/dashboard');\n  } else {\n    redirect('/login');\n  }\n}\n\n\nexport const dynamic = 'force-dynamic';"],"names":[],"mappings":"AAAA,iCAAiC;;;;;;;AACjC;AAAA;;AAGe,SAAS;IACtB,MAAM,QAAQ,aAAa,GAAG;IAE9B,IAAI,OAAO;QACT,IAAA,iMAAQ,EAAC;IACX,OAAO;QACL,IAAA,iMAAQ,EAAC;IACX;AACF;AAGO,MAAM,UAAU","debugId":null}}]
+}

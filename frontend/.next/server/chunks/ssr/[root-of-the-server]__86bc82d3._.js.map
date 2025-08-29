@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 28, "column": 0}, "map": {"version":3,"sources":["file:///E:/internshala-assignments/Real-Time-Chat/frontend/app/page.tsx"],"sourcesContent":["'use client'\n\nimport Router from \"next/router\";\nimport { useEffect } from \"react\";\n\nexport default function Home() {\n\n  useEffect(()=>{\n    if(localStorage.getItem('token')){\n      Router.push('/dashboard');\n    }\n    else Router.push('/login');\n  },[])\n  return (\n    <></>\n  );\n}\n"],"names":[],"mappings":";;;;;AAEA;AACA;AAHA;;;;AAKe,SAAS;IAEtB,IAAA,kNAAS,EAAC;QACR,IAAG,aAAa,OAAO,CAAC,UAAS;YAC/B,yIAAM,CAAC,IAAI,CAAC;QACd,OACK,yIAAM,CAAC,IAAI,CAAC;IACnB,GAAE,EAAE;IACJ,qBACE;AAEJ","debugId":null}}]
+}

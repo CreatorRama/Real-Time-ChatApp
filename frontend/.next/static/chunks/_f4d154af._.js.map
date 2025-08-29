@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///E:/internshala-assignments/Real-Time-Chat/frontend/app/page.tsx"],"sourcesContent":["'use client'\n\nimport { useRouter } from \"next/navigation\";\nimport { useEffect } from \"react\";\n\nexport default function Home() {\n  const router = useRouter();\n\n  useEffect(() => {\n    const token = typeof window !== 'undefined' ? localStorage.getItem('token') : null;\n    \n    if (token) {\n      router.replace('/dashboard');\n    } else {\n      router.replace('/login');\n    }\n  }, [router]);\n\n  return null;\n}"],"names":[],"mappings":";;;;AAEA;AACA;;AAHA;;;AAKe,SAAS;;IACtB,MAAM,SAAS,IAAA,kJAAS;IAExB,IAAA,0KAAS;0BAAC;YACR,MAAM,QAAQ,uCAAgC,aAAa,OAAO,CAAC,WAAW;YAE9E,IAAI,OAAO;gBACT,OAAO,OAAO,CAAC;YACjB,OAAO;gBACL,OAAO,OAAO,CAAC;YACjB;QACF;yBAAG;QAAC;KAAO;IAEX,OAAO;AACT;GAdwB;;QACP,kJAAS;;;KADF","debugId":null}},
+    {"offset": {"line": 45, "column": 0}, "map": {"version":3,"sources":["file:///E:/internshala-assignments/Real-Time-Chat/frontend/node_modules/next/navigation.js"],"sourcesContent":["module.exports = require('./dist/client/components/navigation')\n"],"names":[],"mappings":"AAAA,OAAO,OAAO","ignoreList":[0],"debugId":null}}]
+}
